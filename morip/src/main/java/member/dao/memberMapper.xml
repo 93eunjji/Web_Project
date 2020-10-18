@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberSQL">
+<resultMap id="myblogMap" type="myblog.bean.MyblogDTO">
+ 		<result column="blogboardtable_seq" property="blogboardtable_seq"></result>
+ 		<result column="nickname" property="nickname"></result>
+ 		<result column="subject" property="subject"></result>
+ 		<result column="content" property="content"></result>
+ 		<result column="mainimage" property="mainimage"></result>
+ 		<result column="startdate" property="startdate"></result>
+ 		<result column="enddate" property="enddate"></result>
+ 		<result column="hit" property="hit"></result>
+ 		<result column="ref" property="ref"></result>
+ 		<result column="step" property="step"></result>
+ 		<result column="pseq" property="pseq"></result>
+ 		<result column="logtime" property="logtime"></result>
+ 		<result column="publicoption" property="publicoption"></result>
+ 	</resultMap>
+	<!-- 로그인 -->
+	<select id="snsLogin" parameterType="java.util.Map" resultType="member">
+		select * from membertable where email=#{email} and checkid=#{checkid}
+	</select>
+	
+	<!-- 회원가입  -->
+	<insert id="moripWrite" parameterType="member">
+	begin
+		insert into membertable(membertable_seq, email, pwd, name, nickname, idCardNumber1, idCardNumber2, gender, image ,checkid)
+			values(membertable_seq.nextval, #{email}, #{pwd}, #{name}, #{nickname}, #{idCardNumber1}, #{idCardNumber2}, #{gender}, #{image}, #{checkid});
+
+		update todaytable set countsignup = countsignup + 1;	
+	end;
+	</insert>
+	
+	<!-- 새비밀번호 -->
+	<update id="changePwd" parameterType="java.util.Map" >
+		update membertable set pwd=#{pwd} where email=#{email}
+	</update>
+	
+	<!-- 아이디 존재 여부 확인 -->
+	<select id="getMember" parameterType="java.util.Map" resultType="member">
+		select * from membertable where email=#{email} and checkid=#{checkid}
+	</select>
+	
+	<!-- 닉네임 존재 여부 확인 -->
+	<select id="checkNickname" parameterType="String" resultType="member">
+		select * from membertable where nickname=#{nickname}
+	</select>
+	
+	<!-- 유저 존재 여부 확인 -->
+	<select id="checkUser" parameterType="java.util.Map" resultType="member">
+		select * from membertable where name=#{name} and idcardnumber1=#{idCard1} and idcardnumber2=#{idCard2} and checkid=#{checkid}
+	</select>
+	
+	<!-- 회원탈퇴 -->
+	<update id="dropMorip" parameterType="java.util.Map">
+	begin
+		delete membertable where email=#{email} and checkid=#{checkid};
+		
+		update todaytable set countsignout = countsignout + 1;	
+	end;
+	</update>
+	
+	<!-- 회원정보 수정(email) -->
+	<update id="memberModify" parameterType="java.util.Map">
+	begin
+		update membertable set nickname = #{nickname}, pwd=#{pwd}, gender = #{gender}, image = #{image}
+		where email = #{email} and checkid = #{checkid};
+	
+		update boardtable set nickname = #{nickname}, image = #{image} 
+		where email = #{email};
+		
+		update blogboardtable set nickname = #{nickname} 
+		where email = #{email};
+	end;
+	</update>
+	
+	<!-- 회원정보 수정(sns) -->
+	<update id="memberModify2" parameterType="java.util.Map">
+	begin
+		update membertable set nickname = #{nickname}, gender = #{gender}, image = #{image}
+		where email = #{email} and checkid = #{checkid};
+	
+		update boardtable set nickname = #{nickname}, image = #{image} 
+		where email = #{email};
+		
+		update blogboardtable set nickname = #{nickname} 
+		where email = #{email};
+	end;
+	</update>
+	
+	<!-- 이메일을 가지고 한명분의 데이터 가져오기 -->
+	<select id="getMember2" parameterType="string" resultType="member">
+		select * from membertable where email=#{email}
+	</select>
+	
+	<!-- seq가지고 한명분의 데이터 가져오기 -->
+	<select id="getMember3" parameterType="int" resultType="member">
+		select * from membertable where membertable_seq=#{seq}
+	</select>
+</mapper>

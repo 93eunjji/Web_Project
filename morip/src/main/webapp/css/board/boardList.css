@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+.container-boardList {padding;
+	margin: 0 auto;
+	width: 1120px;
+}
+
+thead {
+	border-top: 2px solid #151515;
+	border-bottom: 2px solid #aaa;
+}
+
+th {
+	background: #d5d9f0; /*=============================*/
+	padding: 8px 10px;
+	letter-spacing: 10px;
+	font-weight: normal;
+}
+
+#boardListTable td {
+	padding: 15px 10px;
+	letter-spacing: 2px;
+}
+
+#paging {
+	cursor: pointer;
+	text-decoration: none;
+	color: #555;
+	display: inline-block;
+	text-align: center;
+	min-width: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	vertical-align: middle;
+	border: 1px solid #c9c9c9;
+	margin: 0px 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#currentPaging {
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+	border: 1px solid #000;
+	display: inline-block;
+	text-align: center;
+	min-width: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	vertical-align: middle;
+	border: 1px solid #c9c9c9;
+	margin: 0px 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*=============================*/
+.bordListTitle {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 3px;
+	margin-left: 30px;
+	font-size: 30px;
+	line-height: 130px;
+}
+
+#boardWriteBtn {
+	/* border: 1px solid #c9c9c9; */
+	border: 1px solid #6c757d !important;
+	width: 150px;
+	height: 50px;
+	float: right;	
+	/* border-color: #6c757d; */
+	margin-top: 70px;
+	/* font-size: 16px; */
+	font-size: 20px;
+	/* color: #6c757d; */
+	 color: #6c757d !important;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	font-family: 'Jua', sans-serif;	
+	border-radius: 5px;
+}
+
+#boardListTable {
+	font-family: 'Jua', sans-serif;
+	height: 30px;
+	font-size: 20px;
+}
+
+.searchba {
+	width: 1120px;
+	text-align: center;
+}
+
+#searchOption {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	height: 40px;
+	width: 130px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+#keyword {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 2px;
+	height: 40px;
+	width: 350px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+#subjectA {
+	color: red;
+}
+
+#boardSearchBtn {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 2px;
+	height: 40px;
+	width: 130px;
+	padding: 0 10px;
+	background-color: #333333;
+	font-size: 16px;
+	color: #fff;
+	outline: none !important;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}

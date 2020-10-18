@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+button:hover {
+	cursor: pointer;
+}
+
+input:focus, #writeFormId:focus {
+	outline: none;
+	border: 1.5px solid #000;
+}
+
+.container-emailWriteForm {padding;
+	margin: 0 auto;
+	align: center;
+	/* display: flex;
+	align-content: center; */
+	width: 100%;
+}
+/*=============================*/
+.emailWriteFormTitle {
+	font-family: 'Jua', sans-serif; 
+	color: #6d6d6d;         
+	font-weight: 400;
+	padding-top: 62px;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 39px;
+	line-height: 1.2;
+	padding-bottom: 53px;
+	letter-spacing: 15px;
+}
+
+.container-emailWriteForm-text {
+	font-family: 'Jua', sans-serif; 
+	margin: 0 auto;
+	width: 400px;
+}
+/*=============================*/
+.emailWriteForm-Id {
+	display: inline-block;
+	font-size: 16px;
+	color: #555555;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+#emailWriteFormId {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 2px; 
+	color: #333333;
+	font-size: 16px;
+	height: 50px;
+	/* width: 263px; */
+	width: 220px;
+	padding: 0 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+	border-style: solid;
+	border-radius: 10px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	margin-bottom: 10px;
+}
+
+#emailBtn {
+	font-family: 'Jua', sans-serif; 
+	text-align: center;
+	padding: 0 15px;
+	height: 50px;
+	background-color: #333333;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #fff;
+	outline: none !important;
+	border: none;
+}
+/*=============================*/
+#email-id {
+	font-family: 'Jua', sans-serif; 
+	letter-spacing: 2px;
+	color: #333333;
+	font-size: 16px;
+	height: 50px;
+	/* width: 263px; */
+	width: 220px;
+	padding: 0 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+	border-style: solid;
+	border-radius: 10px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+#okBtn {
+	font-family: 'Jua', sans-serif; 
+	text-align: center;
+	padding: 0 27px;
+	height: 50px;
+	background-color: #333333;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #fff;
+	outline: none !important;
+	border: none;
+}
+/*=============================*/
+.emailWriteForm-pwd {
+	font-family: 'Jua', sans-serif; 
+	display: inline-block;
+	font-size: 16px;
+	color: #555555;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+#emailWriteFormPwd {
+	letter-spacing: 2px;
+	font-family: 'Jua', sans-serif; 
+	color: #333333;
+	font-size: 16px;
+	height: 50px;
+	/* width: 380px; */
+	width: 300px;
+	padding: 0 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	
+}
+/*=============================*/
+.emailWriteFormrepwd {
+	display: none;
+	letter-spacing: 2px;
+}
+
+#repwd {
+	font-family: 'Jua', sans-serif; 
+	color: #333333;
+	font-size: 16px;
+	height: 50px;
+	/* width: 380px; */
+	width: 300px;
+	padding: 0 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	margin-bottom: 15px;
+}
+/*=============================*/
+#emailWriteFormBtn {
+	font-family: 'Jua', sans-serif; 
+	text-align: center;
+	padding: 0 60px;
+	height: 60px;
+	background-color: #333333;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #fff;
+	outline: none !important;
+	border: none;
+	margin-top: 35px;
+	margin-right: 20px;
+	margin-bottom: 35px;
+}
+
+#emailWriteFormresetBtn {
+	font-family: 'Jua', sans-serif; 
+	text-align: center;
+	padding: 0 60px;
+	height: 60px;
+	background-color: #333333;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #fff;
+	outline: none !important;
+	border: none;
+	margin-bottom: 62px;
+}
+/*=============================*/
+#nameDiv {
+	margin-left: 20px;
+}
+
+#reidDiv {
+	margin-top:10px;
+	margin-left: 20px;
+}
+
+#pwdDiv {
+	margin-left: 20px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+#repwdDiv {
+	margin-left: 20px;
+}
+
+.hr {
+	border-bottom: 4px solid black;
+	width: 400px;
+	margin: 0 auto;
+}

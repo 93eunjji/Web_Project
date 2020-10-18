@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.container-semiWriteForm{
+	padding; margin: 0;
+	
+}
+/*=============================*/
+.semiWriteTitle {
+	font-family: 'Jua', sans-serif; 
+    color: #6d6d6d;
+    font-weight: 400;
+	letter-spacing: 15px;
+    width: 100%;
+    display: block;
+    font-size: 39px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 53px;
+    padding-top: 62px;
+}
+.semiWriteText{
+	font-family: 'Jua', sans-serif; 
+	width: 100%;
+    display: block;
+    font-size: 20px;
+    color: #555555;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+/*=============================*/
+button:hover{
+	cursor: pointer;
+}
+ .container-semiWriteBtn{
+	text-align: center;
+}
+ 
+.semiWriteBtn{
+	text-align: center;
+    padding: 0 130px;
+    height: 60px;
+    background-color: #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    outline: none !important;
+    border: none;
+}
+
+.semiWriteBtn-email{
+	text-align: center;
+}
+.btn-kakao{
+    outline: none !important;
+    border: none;
+    background-color: #fff;
+}
+.btn-google{
+	margin-top: 15px;
+	outline: none !important;
+    border: none;
+	background-color: #fff;
+	padding-bottom: 62px;
+}
+.hr {
+	border-bottom: 4px solid black;
+	width: 400px;
+	margin: 0 auto;
+}

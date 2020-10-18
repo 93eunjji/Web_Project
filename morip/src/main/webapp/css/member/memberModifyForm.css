@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 여기부터시작 */
+input:focus, #writeFormId:focus{
+	outline:  none;
+	border: 1.5px solid #000;	
+}
+/* 위에 이름 부분 */
+.memberModifyFormTitle {
+	font-family: 'Jua', sans-serif;    
+	text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 39px;
+    color: #555555;
+    line-height: 1.2;
+    padding-bottom: 53px;
+    padding-top: 100px;
+    letter-spacing: 7px;
+}
+
+.container-memberModifyForm-text{
+	margin: 0 auto;
+	width: 600px;
+	display: flex;
+}
+
+.box11 {
+	width: 170px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.box22 {
+	font-family: 'Jua', sans-serif;
+}
+
+/* 사진프로필쪽 */
+.container-memberModifyprofile {
+	font-family: 'Jua', sans-serif;
+	letter-spacing: 3px;
+	margin: 0 auto;
+	margin-right: 35px;
+	text-align: center;
+}
+
+.modifyProfile {
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;	
+	background-size: 150px 150px;
+	border-radius: 150px;
+	text-align: right;
+}
+
+.userName {
+	margin-top: 10px;
+	font-size: 20px;	
+	width: 150px;
+}
+
+.memberModifyForm-email,
+.memberModifyForm-pwd,
+.memberModifyForm-repwd,
+.memberModifyForm-nickName {
+	display:inline-block;
+	font-family: 'Jua', sans-serif;
+    font-size: 16px;
+    color: #555555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#memberModifyFormEmail,
+#memberModifyFormPwd,
+#memberModifyFormRepwd,
+#memberModifyFormNickName{
+	font-family: 'Jua', sans-serif; 
+    color: #333333;
+    font-size: 16px;
+    height: 50px;
+    width: 300px;
+    padding: 0 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+ 	border-radius: 10px;
+ 	border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+  	margin-bottom: 15px;
+}
+
+/* 성별부분*/
+.memberModifyForm-gender{
+	display:inline-block;
+	font-family: 'Jua', sans-serif;  
+    font-size: 16px;
+    color: #555555;
+    padding-top: 10px;
+    padding-bottom: 10px;	
+}
+
+#gender1{
+	font-family: 'Jua', sans-serif;  
+	margin-left: 30px;
+}
+
+#gender2{
+	font-family: 'Jua', sans-serif;  
+	margin-left: 30px;
+}
+
+.hr {
+	border-bottom: 4px solid black;
+	width: 400px;
+	margin: 0 auto;
+}
+
+/* 프로필 사진 변경*/ 
+.changeImage{
+	height: 100px;
+	width: 140px;
+	overflow: hidden;
+} 
+
+.changeImage label {
+    font-size: 15px;
+    color: #337ab7;
+    border: none;
+    cursor: pointer;
+} 
+.changeImage input[type="file"] { /* 파일 필드 숨기기 */ 
+	cursor: pointer;
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	padding: 0; 
+	margin: -1px; 
+	overflow: hidden; 
+	clip:rect(0,0,0,0); 
+	border: 0; 
+}
+
+
+/* 아래 버튼 부분 */
+#memberModifyFormBtn,
+#memberModifyFormResetBtn,
+#memberModifyFormDropBtn {
+	text-align: center;
+	padding: 0 23px;
+	height: 50px;
+	background-color: #333333;
+	border-radius: 10px;
+    font-family: 'Jua', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    outline: none !important;
+    border: none;
+    margin-left: 3px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
